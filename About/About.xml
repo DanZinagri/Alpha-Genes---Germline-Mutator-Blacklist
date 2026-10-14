@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Alpha Genes - Germline Mutator Blacklist</name>
+	<author>DanZinagri</author>
+	<packageId>DanZinagri.AlphaGenes.GermlineMutatorBlacklist</packageId>
+	<supportedVersions>
+		<li>1.7</li>
+	</supportedVersions>
+	<description>Choose which genes Alpha Genes' germline mutator is never allowed to give.
+
+The germline mutator adds one random gene to a pawn, picked from almost every loaded gene. With a lot of gene mods that includes genes that make no sense as a random mutation: android parts, astrogenes, sleeve quality genes and the like. With this mod a default list of those is blocked, and so is everything on Alpha Genes' own wretch blacklist.
+
+Every gene the mutator could pick is listed in the mod settings with a search box and a tick box per gene, so you can block more or allow ones the defaults block. Changes apply straight away; no restart needed.
+
+The default list is an XML def (GermlineMutatorBlacklist.GermlineBlacklistDef), so other mods can add their own list or patch this one.
+
+Originally part of Too Many Mods - Compats and Rebalances by Warachia.</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>sarg.alphagenes</packageId>
+			<displayName>Alpha Genes</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2891845502</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>sarg.alphagenes</li>
+	</loadAfter>
+</ModMetaData>

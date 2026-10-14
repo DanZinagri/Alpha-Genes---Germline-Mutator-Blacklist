@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+		The default blacklist: genes the germline mutator will not give unless the player allows them in the mod settings.
+		- genes: gene defNames. A gene that is not loaded is skipped, and MayRequire works on each entry.
+		- defNameContains: any gene whose defName contains one of these fragments is blocked.
+		- To extend the defaults, add another GermlineBlacklistDef: all loaded lists are merged. To change or replace them,
+		  patch this def.
+		Alpha Genes' own wretch blacklist (AlphaGenes.WretchBlacklistDef) is used as a second default list; that can be
+		switched off in the mod settings.
+		These entries are Too Many Mods' original additions and have not been checked against current gene mods.
+		Alpha Genes itself already skips genes with a prerequisite, genes without exclusion tags, VRE Android genes and
+		its own character-creation-only genes.
+	-->
+	<GermlineMutatorBlacklist.GermlineBlacklistDef>
+		<defName>GermlineMutatorBlacklist_Default</defName>
+		<genes>
+			<li MayRequire="biotexpans.core">BTE_ShearableGene</li>
+			<li MayRequire="biotexpans.core">BTE_MilkableGene</li>
+			<li MayRequire="RedMattis.BigSmall.Core">MinTemp_HugeNeed</li>
+			<li MayRequire="RedMattis.BigSmall.Core">MaxTemp_HugeNeed</li>
+			<li MayRequire="RedMattis.BigSmall.SimpleAndroids">BS_CommandoHead</li>
+			<li MayRequire="RedMattis.BigSmall.SimpleAndroids">BS_CommandoBody</li>
+			<li MayRequire="RedMattis.BigSmall.SimpleAndroids">BS_TVHead</li>
+			<li MayRequire="vanillaracesexpanded.starjack">VREStarjack_OxygenSensitivity_Extreme</li>
+			<li MayRequire="vanillaracesexpanded.starjack">VREStarjack_Gene_Randomizer</li>
+		</genes>
+		<defNameContains>
+			<li>AC_SleeveQuality_</li>
+			<li>_Astrogene</li>
+			<li>VRE_Pollution</li>
+			<li>BS_GrigoriFertile</li>
+		</defNameContains>
+	</GermlineMutatorBlacklist.GermlineBlacklistDef>
+
+</Defs>
