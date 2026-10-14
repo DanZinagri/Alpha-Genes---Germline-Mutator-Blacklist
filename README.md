@@ -1,4 +1,4 @@
-# Alpha Genes - Germline Mutator Blacklist
+# Alpha Genes - Germline Mutator Blacklist  (tldr basically unchanged from its TMM version it just got a fancy config menu)
 
 Choose which genes Alpha Genes' germline mutator is never allowed to give. RimWorld 1.7 only.
 
